@@ -1,0 +1,85 @@
+<!--
+Class - Web Tec Assesment 1
+Name - Connor Cunningham
+Email - 40340741@live.napier.ac.uk
+-->
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>
+	Connor Cunningham 40340741
+</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="ROT13.js"></script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>
+                Web Development
+			</h1>
+		</div>
+		<div id="menu">
+			<ul>
+                <li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="CAESAR%20CIPHER.html">Caesar Cipher</a>
+				</li>
+				<li>
+					<a href="MORSE%20CODE.html">Morse Code</a>
+				</li>
+                <li class="active">
+					<a href="ROT13.html">ROT13</a>
+				</li>
+                <li>
+					<a href="Base64.html">BASE64</a>
+				</li>
+                <li class="last">
+					<a href="VIGENERE%20CIPHER.html">vigenere cipher</a>
+				</li>
+            </ul>
+		</div>
+	</div>
+	<div id="boarder4">
+		<div id="content">
+			<div class="box">
+				<h2>
+					About Rot13
+				</h2>
+                <p><strong>ROT13</strong> is a simple clear text cipher almost like the Caesar cipher but it replaces it replaces a letter from the alphabet with the 13<sup>th</sup> letter after it.</p>
+                <p><strong>Example:</strong> &nbsp;HELLO In the alphabet will become URYYB and if you do it in reverse it will say HELLO again</p>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/uMGNwoFHfB4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                <p></p>
+                <h2>ROT13 Cipher</h2>
+                <div id ="Add text">
+                <textarea rows ="1" cols ="50" autofocus id="message"> Message in here </textarea>
+                    <button class="button" type ="button" onclick ="encode()" id ="encode_button"> Encode </button>
+                    <input onclick="this.form.output.value='';" value="clear" class="button" type="button">
+                </div>
+                    <div id =" input_area for decript">
+                <textarea rows ="1" cols ="50" autofocus id="message"> Decript Message in here </textarea>
+                    <button class="button" type ="button" onclick ="decrypt()=" id ="decode-ouput"> Encode </button>
+                    <input onclick="this.form.output.value=;" value="clear" class="button" type="button">
+                                        
+                <div id ="out text">
+                    <p> This is your encoded message : <br/> </p>
+                    <textarea id = "output" rows = "2" cols = "50">
+                    </textarea>
+                    <input onclick="this.form.output.value='';" value="clear" class="button" type="button">
+                    
+		      </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+<div id="footer">
+	&copy; cunningham_connor_webtech_coursework1 | Design by <a href="40340741@live.napier.ac.uk" rel="me">Connor Cunningham</a>
+</div>
+</body>
+</html>

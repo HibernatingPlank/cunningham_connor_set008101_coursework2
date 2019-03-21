@@ -1,0 +1,91 @@
+<!--
+Class - Web Tec Assesment 1
+Name - Connor Cunningham
+Email - 40340741@live.napier.ac.uk
+-->
+<html>
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>
+	Connor Cunningham 40340741
+</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="Base64.js"></script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>
+                Web Development
+			</h1>
+		</div>
+		<div id="menu">
+			<ul>
+                <li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="CAESAR%20CIPHER.html">Caesar Cipher</a>
+				</li>
+				<li>
+					<a href="MORSE%20CODE.html">Morse Code</a>
+				</li>
+                <li>
+					<a href="ROT13.html">ROT13</a>
+				</li>
+                <li class="active">
+					<a href="Base64.html">BASE64</a>
+				</li>
+                <li>
+					<a href="VIGENERE%20CIPHER.html">vigenere cipher</a>
+				</li>
+            </ul>
+		</div>
+	</div>
+	<div id="boarder5">
+		<div id="content">
+			<div class="box">
+				<h2>
+					About BASE64
+				</h2>
+				<p>
+					Base64 is just like binary to text, it is used for encoding and decoding text into binary data using the ASCII table, it is mostly used for transfering messages. 
+				</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/8qkxeZmKmOY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p></p>
+                <div>
+                  <textarea rows ="2" cols ="50" autofocus id="txt1"> Message in here </textarea>
+                </div>
+                <div>
+                  <input class="button" type="button" id="btnencode" value="Encode" onClick="encode()"/>
+                    <input onclick="this.form.output.value='';" value="clear" class="button" type="button">
+                </div>
+                <div>
+                  <textarea rows ="2" cols ="50" autofocus id="txt2"> </textarea>
+                </div>
+                <br/>
+                <div>
+                  <textarea rows ="2" cols ="50" autofocus id="txt3"> Decoded message </textarea>
+                </div>
+                <div>
+                  <input class="button" type="button" id="btndecode" value="Decode" onClick="decode()"/>
+                    <input onclick="this.form.output.value='';" value="clear" class="button" type="button">
+                </div>
+                <div>
+                  <textarea rows ="2" cols ="50" autofocus id="txt4"> </textarea>
+
+
+                </div>
+			</div>
+		</div>
+	</div>
+</div>
+    
+<div id="footer">
+	&copy; cunningham_connor_webtech_coursework1 | Design by <a href="40340741@live.napier.ac.uk" rel="me">Connor Cunningham</a>
+</div>
+</body>
+</html>
