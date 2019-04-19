@@ -1,0 +1,53 @@
+html
+  head
+    meta(name='keywords', content='')
+    meta(name='description', content='')
+    meta(http-equiv='content-type', content='text/html; charset=utf-8')
+    title
+      | Connor Cunningham 40340741
+    link(rel='stylesheet', type='text/css', href='/public/CSS/style.css')
+    
+  body
+    #wrapper
+      #header
+        #logo
+          h1
+            | Web Development
+        #menu
+          ul
+             li(class=(title == 'Login' ? 'active' : ''))
+               a(href='/users/login') Login
+             li(class=(title == 'Register' ? 'active' : ''))
+               a(href='/users/register') Register
+  
+      #boarder1
+        #content
+          .box
+              
+             h2 Register
+             p Please register using the form below
+             if errors
+              each error, i in errors
+               div.alert.alert-danger #{error.msg}
+             form(method='post', action='/users/register',enctype='multipart/form-data')
+              .form-group
+               label Name
+               input.form-control(name='name', type='text', placeholder='Enter Name')
+              .form-group
+               label Email
+               input.form-control(name='email', type='email', placeholder='Enter Email')
+              .form-group
+               label Username
+               input.form-control(name='username', type='text', placeholder='Enter Username')
+              .form-group
+               label Password
+               input.form-control(name='password', type='password', placeholder='Enter Password')
+              .form-group
+               label Confirm Password
+               input.form-control(name='password2', type='password', placeholder='Confirm Password')
+              .form-group
+              input.btn.btn-primary(type='submit', name='submit',value='Register')
+
+    #footer
+      | © cunningham_connor_webtech_coursework1 | Design by 
+      a(href='40340741@live.napier.ac.uk', rel='me') Connor Cunningham

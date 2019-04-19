@@ -1,0 +1,57 @@
+html
+  head
+    meta(http-equiv='content-type', content='text/html; charset=utf-8')
+    title
+      | Connor Cunningham
+    link(rel='stylesheet', type='text/css', href='/public/CSS/style.css')
+  body
+    #wrapper
+      #header
+        #logo
+          h1
+            | Web Development
+        #menu
+          ul
+            li
+              a(href='/index') Home
+            li.active
+              a(href='/mail') Mail
+            li
+              a(href='/CAESARCIPHER') Caesar Cipher
+            li
+              a(href='/MORSECODE') Morse Code
+            li
+              a(href='/ROT13') ROT13
+            li
+              a(href='/Base64') BASE64
+            li
+              a(href='/VIGENERECIPHER') vigenere cipher
+            li
+              a(href='/users/logout') Logout
+      #boarder4
+        #content
+          .box
+                h2
+                  | Mail
+                p
+                  | This page is for Private Messages to other users
+                p
+                div
+                div
+                  div
+                    label(for='text') Text:
+                  div
+                    textarea#text(cols='30', rows='5', style='width:50em; height:15em') Add your text here
+                div
+                    input.btn.btn-primary(type='submit', name='submit',value='Send')
+                  div
+                    label(for='') Usernames:
+                  div
+                    input#shift(type='text', value='All', style='width:4em;')
+                    p
+                    textarea#text(cols='30', rows='5', style='width:50em; height:15em') HibernatingPlank: Hello World
+
+              
+    #footer
+      | © cunningham_connor_webtech_coursework1 | Design by 
+      a(href='40340741@live.napier.ac.uk', rel='me') Connor Cunningham

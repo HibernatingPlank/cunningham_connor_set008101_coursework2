@@ -1,0 +1,64 @@
+html
+  head
+    meta(http-equiv='content-type', content='text/html; charset=utf-8')
+    title
+      | Connor Cunningham 40340741
+    link(rel='stylesheet', type='text/css', href='/public/CSS/style.css')
+    script(type='text/javascript', src='public/javascripts/ROT13.js')
+  body
+    #wrapper
+      #header
+        #logo
+          h1
+            | Web Development
+        #menu
+          ul
+            li
+              a(href='/index') Home
+            li
+              a(href='/mail') Mail
+            li
+              a(href='/CAESARCIPHER') Caesar Cipher
+            li
+              a(href='/MORSECODE') Morse Code
+            li.active
+              a(href='/ROT13') ROT13
+            li
+              a(href='/Base64') BASE64
+            li
+              a(href='/VIGENERECIPHER') vigenere cipher
+            li
+              a(href='/users/logout') Logout
+      #boarder4
+        #content
+          .box
+            h2
+              | About Rot13
+            p
+              strong ROT13
+              |  is a simple clear text cipher almost like the Caesar cipher but it replaces it replaces a letter from the alphabet with the 13
+              sup th
+              |  letter after it.
+            p
+              strong Example:
+              |   HELLO In the alphabet will become URYYB and if you do it in reverse it will say HELLO again
+            iframe(width='560', height='315', src='https://www.youtube.com/embed/uMGNwoFHfB4', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
+            p
+            h2 ROT13 Cipher
+            div(id='Add text')
+              textarea#message(rows='1', cols='50', autofocus='')  Message in here 
+              button#encode_button.button(type='button', onclick='encode()')  Encode 
+              input.button(onclick="this.form.output.value='';", value='clear', type='button')
+            div(id=' input_area for decript')
+              textarea#message(rows='1', cols='50', autofocus='')  Decript Message in here 
+              button#decode-ouput.button(type='button', onclick='decrypt()=')  Encode 
+              input.button(onclick='this.form.output.value=;', value='clear', type='button')
+              div(id='out text')
+                p
+                  | This is your encoded message : 
+                  br
+                textarea#output(rows='2', cols='50')                     
+                input.button(onclick="this.form.output.value='';", value='clear', type='button')
+    #footer
+      | © cunningham_connor_webtech_coursework1 | Design by 
+      a(href='40340741@live.napier.ac.uk', rel='me') Connor Cunningham

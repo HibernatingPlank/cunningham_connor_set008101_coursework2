@@ -1,0 +1,53 @@
+html
+  head
+    meta(http-equiv='content-type', content='text/html; charset=utf-8')
+    title
+      | Connor Cunningham 40340741
+    link(rel='stylesheet', type='text/css', href='/public/CSS/style.css')
+    script(type='text/javascript', src='public/javascripts/MORSECODE.js')
+  body
+    #wrapper
+      #header
+        #logo
+          h1
+            | Web Development
+        #menu
+          ul
+            li
+              a(href='/index') Home
+            li
+              a(href='/mail') Mail
+            li
+              a(href='/CAESARCIPHER') Caesar Cipher
+            li.active
+              a(href='/MORSECODE') Morse Code
+            li
+              a(href='/ROT13') ROT13
+            li
+              a(href='/Base64') BASE64
+            li
+              a(href='/VIGENERECIPHER') vigenere cipher
+            li
+              a(href='/users/logout') Logout
+      #boarder3
+        #content
+          .box
+            h2
+              | About Morse Code
+            p
+              strong Morse Code
+              |  is a Character encoding way of encryption, the text is translated into two different signals of dots and dashes or dashes and dots. This type of encryption was used for communicating through radio waves before they had phones.
+            iframe(width='560', height='315', src='https://www.youtube.com/embed/Z-kZHXBqj4A', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
+            p
+              img(src='https://www.merriam-webster.com/assets/mw/static/table/collegiate/morsecod.jpg', alt='', width='550', height='304')
+            p
+            h2
+              | Morse Code Cipher
+            form(name='morsecode')
+              | Type in a word or phrase: 
+              input(type='Text', name='morse', size='28', placeholder='Cipher text', value='Type in your text')
+              input(type='Button', value='Encode', onclick='encode()')
+              textarea(name='codebox', cols='50', rows='11', style='width:70%', wrap='virtual')  
+    #footer
+      | © cunningham_connor_webtech_coursework1 | Design by 
+      a(href='40340741@live.napier.ac.uk', rel='me') Connor Cunningham

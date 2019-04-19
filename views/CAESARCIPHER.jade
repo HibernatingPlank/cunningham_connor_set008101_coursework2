@@ -1,0 +1,77 @@
+head
+    meta(http-equiv='content-type', content='text/html; charset=utf-8')
+    title
+      | Connor Cunningham 40340741
+    link(rel='stylesheet', type='text/css', href='/public/CSS/style.css')
+    script(type='text/javascript', src='public/javascripts/CAESARCIPHER.js')
+  body
+    #wrapper
+      #header
+        #logo
+          h1
+            | Web Development
+        #menu
+          ul
+            li
+              a(href='/index') Home
+            li
+              a(href='/mail') Mail
+            li.active
+              a(href='/CAESARCIPHER') Caesar Cipher
+            li
+              a(href='/MORSECODE') Morse Code
+            li
+              a(href='/ROT13') ROT13
+            li
+              a(href='/Base64') BASE64
+            li
+              a(href='/VIGENERECIPHER') vigenere cipher
+            li
+              a(href='/users/logout') Logout
+      #boarder2
+        #content
+          .box
+            h2
+              | About Caesar Cipher
+            p
+              | A Caesar Cipher also known as a shift cipher is one of the simplest ciphers and most used. This cipher uses plane text and its replaced by a fixed number down the alphabet
+            p
+              strong Example:
+            p
+              strong  Plain:    ABCDEFGHIJKLMNOPQRSTUVWXYZ
+            p The text above the normal alphabet
+            p
+              strong Cipher:   XYZABCDEFGHIJKLMNOPQRSTUVW
+            p
+              | The text above is the same alphabet it has been shifted left 3 times, or right 23 times.
+            p
+              | When you encrypt the text, the person needs to write down every letter of the message in plane line and then writes down the corresponding letter in the cipher line.
+            p
+              strong Plaintext:  THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG
+            p
+              strong Ciphertext: QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD
+            p
+              | When is the exact same but you do it in revers using the shifted number but in the other direction.
+            iframe(width='560', height='315', src='https://www.youtube.com/embed/o6TPx1Co_wg', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
+            p
+            div
+              h1 Cipher Converter
+            div
+              div
+                label(for='text') Text:
+              div
+                textarea#text(cols='30', rows='5', style='width:50em; height:15em') Add your text here
+            div
+              div
+                label(for='shift') Shift:
+              div
+                input#shift(type='text', value='13', style='width:4em;')
+            div
+              div
+                input.button(type='button', value='Encrypt', onclick='doCrypt(false);')
+                input.button(type='button', value='Decrypt', onclick='doCrypt(true);')
+            table.noborder
+              tbody
+            #footer
+              | © cunningham_connor_webtech_coursework1 | Design by 
+              a(href='40340741@live.napier.ac.uk', rel='me') Connor Cunningham

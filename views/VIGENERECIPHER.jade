@@ -1,0 +1,69 @@
+html
+  head
+    meta(name='keywords', content='')
+    meta(name='description', content='')
+    meta(http-equiv='content-type', content='text/html; charset=utf-8')
+    title
+      | Connor Cunningham 40340741
+    link(rel='stylesheet', type='text/css', href='/public/CSS/style.css')
+    script(type='text/javascript', src='public/javascripts/VIGENERECIPHER.js')
+  body
+    #wrapper
+      #header
+        #logo
+          h1
+            | Web Development
+        #menu
+          ul
+            li
+              a(href='/index') Home
+            li
+              a(href='/mail') Mail
+            li
+              a(href='/CAESARCIPHER') Caesar Cipher
+            li
+              a(href='/MORSECODE') Morse Code
+            li
+              a(href='/ROT13') ROT13
+            li
+              a(href='/Base64') BASE64
+            li.active
+              a(href='/VIGENERECIPHER') vigenere cipher
+            li
+              a(href='/users/logout') Logout
+      #boarder6
+        #content
+          .box
+            h2
+              | About Vigenere Cipher
+            p
+              | Vigenere Cipher is a way to encrypt the clear text, the way it encrypt the text is that it uses polyalphabetic substiution
+            div
+              div
+                | Input:
+                br
+                input.button(onclick="this.form.input.value='';", value='clear', type='button')
+              div
+                textarea(name='input', rows='10', cols='60', wrap='virtual')
+                  | Input Text
+            div
+              div
+                | Key:
+                br
+                input.button(onclick="this.form.key.value='';", value='clear', type='button')
+              div
+                textarea(name='key', rows='5', cols='60', wrap='virtual')
+                  | text
+            div
+              div Coding direction:
+              div
+                input.button(value='encode', onclick='runcoder (true);', type='button')
+                input.button(value='decode', onclick='runcoder (false);', type='button')
+            div
+              | Output:
+              br
+              input.button(onclick="this.form.output.value='';", value='clear', type='button')
+            textarea(name='output', rows='10', cols='60', wrap='virtual') Ouput Text 
+    #footer
+      | © cunningham_connor_webtech_coursework1 | Design by 
+      a(href='40340741@live.napier.ac.uk', rel='me') Connor Cunningham
