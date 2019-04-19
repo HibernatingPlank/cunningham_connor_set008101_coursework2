@@ -2,6 +2,10 @@
 
 web dev, need to add my website to my web server, after that i need to add a log in page with messaging
 
+Need before Running:
+node-v11.14.0-x64
+mongodb-win32-x86_64-2008plus-ssl-4.0.9-signed
+
 How to run:
 Must be in root directory of repository
 
