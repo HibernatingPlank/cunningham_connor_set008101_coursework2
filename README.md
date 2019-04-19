@@ -14,7 +14,7 @@ pwd
 Command to setup node modules and start server:
 
 cd Nodejs/ && npm install
-This can take a couple of minutes to run.
+This can take a couple of minutes to install all the exstessions.
 
 Final Terminal outpuut should be:
 
